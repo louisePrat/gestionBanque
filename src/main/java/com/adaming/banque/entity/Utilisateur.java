@@ -22,7 +22,7 @@ public class Utilisateur implements Serializable{
 	private Long idUtilisateur;
 	private String nomUtilisateur;
 	private String prenomUtilisateur;
-	@OneToMany
+	@OneToMany(mappedBy = "utilisateur")
 	private List<Compte> comptes;
 
 	//Constructors
