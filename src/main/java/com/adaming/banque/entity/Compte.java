@@ -35,9 +35,8 @@ public class Compte implements Serializable{
 	//Constructors
 	public Compte() {
 	}
-	public Compte(Long idCompte, String dateCreation, double solde) {
+	public Compte(String dateCreation, double solde) {
 		super();
-		this.idCompte = idCompte;
 		this.dateCreation = dateCreation;
 		this.solde = solde;
 	}
